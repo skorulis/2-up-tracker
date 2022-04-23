@@ -12,6 +12,7 @@ struct PTGamblingTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(IOC.shared.container.resolve(GenericFactory.self)!)
         }
     }
 }

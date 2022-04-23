@@ -14,6 +14,13 @@
 		FADFFA3628137FEB0066A4D6 /* ScaleOfPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA3528137FEB0066A4D6 /* ScaleOfPTView.swift */; };
 		FADFFA392813807E0066A4D6 /* PTImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA382813807E0066A4D6 /* PTImage.swift */; };
 		FADFFA3C2813819B0066A4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADFFA3B2813819B0066A4D6 /* Assets.xcassets */; };
+		FADFFA3F281384E70066A4D6 /* BetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA3E281384E70066A4D6 /* BetsView.swift */; };
+		FADFFA41281384ED0066A4D6 /* BetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA40281384ED0066A4D6 /* BetsViewModel.swift */; };
+		FADFFA442813858B0066A4D6 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = FADFFA432813858B0066A4D6 /* SwinjectAutoregistration */; };
+		FADFFA4B281385A40066A4D6 /* SingletonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA47281385A40066A4D6 /* SingletonService.swift */; };
+		FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA48281385A40066A4D6 /* GenericFactory.swift */; };
+		FADFFA4D281385A40066A4D6 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA49281385A40066A4D6 /* ErrorService.swift */; };
+		FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA4A281385A40066A4D6 /* IOC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,12 @@
 		FADFFA3528137FEB0066A4D6 /* ScaleOfPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOfPTView.swift; sourceTree = "<group>"; };
 		FADFFA382813807E0066A4D6 /* PTImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTImage.swift; sourceTree = "<group>"; };
 		FADFFA3B2813819B0066A4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADFFA3E281384E70066A4D6 /* BetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsView.swift; sourceTree = "<group>"; };
+		FADFFA40281384ED0066A4D6 /* BetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsViewModel.swift; sourceTree = "<group>"; };
+		FADFFA47281385A40066A4D6 /* SingletonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonService.swift; sourceTree = "<group>"; };
+		FADFFA48281385A40066A4D6 /* GenericFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFactory.swift; sourceTree = "<group>"; };
+		FADFFA49281385A40066A4D6 /* ErrorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		FADFFA4A281385A40066A4D6 /* IOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADFFA442813858B0066A4D6 /* SwinjectAutoregistration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 				FADFFA3A2813819B0066A4D6 /* Resources */,
 				FADFFA37281380680066A4D6 /* Model */,
 				FA163DEE28137E9F0072D9FE /* Scene */,
+				FADFFA45281385A40066A4D6 /* Service */,
 				FA163DCA28137E770072D9FE /* Preview Content */,
 			);
 			path = PTGamblingTracker;
@@ -105,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				FADFFA3028137FE50066A4D6 /* App */,
+				FADFFA3D281384DB0066A4D6 /* Bets */,
 				FA163DF428137FCE0072D9FE /* Scale */,
 			);
 			path = Scene;
@@ -143,6 +159,34 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FADFFA3D281384DB0066A4D6 /* Bets */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA3E281384E70066A4D6 /* BetsView.swift */,
+				FADFFA40281384ED0066A4D6 /* BetsViewModel.swift */,
+			);
+			path = Bets;
+			sourceTree = "<group>";
+		};
+		FADFFA45281385A40066A4D6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA46281385A40066A4D6 /* App */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FADFFA46281385A40066A4D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA47281385A40066A4D6 /* SingletonService.swift */,
+				FADFFA48281385A40066A4D6 /* GenericFactory.swift */,
+				FADFFA49281385A40066A4D6 /* ErrorService.swift */,
+				FADFFA4A281385A40066A4D6 /* IOC.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +203,9 @@
 			dependencies = (
 			);
 			name = PTGamblingTracker;
+			packageProductDependencies = (
+				FADFFA432813858B0066A4D6 /* SwinjectAutoregistration */,
+			);
 			productName = PTGamblingTracker;
 			productReference = FA163DC128137E770072D9FE /* PTGamblingTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +256,9 @@
 				Base,
 			);
 			mainGroup = FA163DB828137E770072D9FE;
+			packageReferences = (
+				FADFFA422813858B0066A4D6 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+			);
 			productRefGroup = FA163DC228137E770072D9FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,9 +294,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADFFA3428137FE50066A4D6 /* ContentView.swift in Sources */,
+				FADFFA4B281385A40066A4D6 /* SingletonService.swift in Sources */,
+				FADFFA3F281384E70066A4D6 /* BetsView.swift in Sources */,
+				FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */,
+				FADFFA41281384ED0066A4D6 /* BetsViewModel.swift in Sources */,
+				FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */,
 				FADFFA3628137FEB0066A4D6 /* ScaleOfPTView.swift in Sources */,
 				FADFFA3328137FE50066A4D6 /* PTGamblingTrackerApp.swift in Sources */,
 				FADFFA392813807E0066A4D6 /* PTImage.swift in Sources */,
+				FADFFA4D281385A40066A4D6 /* ErrorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +570,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FADFFA422813858B0066A4D6 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FADFFA432813858B0066A4D6 /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADFFA422813858B0066A4D6 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA163DB928137E770072D9FE /* Project object */;
 }
