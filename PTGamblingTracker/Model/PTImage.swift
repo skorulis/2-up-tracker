@@ -11,15 +11,19 @@ enum PTImage: String, CaseIterable {
     
     case neutral // Single image at the neutral position
     
-    case angry1
-    case angry2
+    case angry1, angry2
     
-    case happy1, happy2, happy3
-    case odd2
-    case plain1, plain2, plain3, plain4
-    case shocked1, shocked2, shocked3
+    case happy1, happy2, happy3, happy4, happy5, happy6, happy7, happy8
+    case odd2, odd3
+    case ok1, ok2
+    case plain1, plain2, plain3, plain4, plain5, plain6, plain7
+    case shocked1, shocked2, shocked3, shocked4
     case stoned1, stoned2
-    case winning1, winning2
+    case unsure1, unsure2, unsure3, unsure4, unsure5, unsure6, unsure7, unsure8
+    case what1, what2, what3
+    case winning1, winning2, winning3, winning4, winning5
+    
+    
     
 }
 
@@ -37,18 +41,44 @@ extension PTImage {
         case .happy1: return 50
         case .happy2: return 50
         case .happy3: return 50
-        case .odd2: return -10
+        case .happy4: return 55
+        case .happy5: return 60
+        case .happy6: return 40
+        case .happy7: return 52
+        case .happy8: return 53
+        case .odd2: return -80
+        case .odd3: return -50
+        case .ok1: return 20
+        case .ok2: return 30
         case .plain1: return 10
         case .plain2: return 10
         case .plain3: return 10
         case .plain4: return 10
+        case .plain5: return 20
+        case .plain6: return 20
+        case .plain7: return 20
         case .shocked1: return -50
         case .shocked2: return -50
         case .shocked3: return -50
+        case .shocked4: return -55
         case .stoned1: return -80
         case .stoned2: return -80
+        case .unsure1: return -20
+        case .unsure2: return -21
+        case .unsure3: return -22
+        case .unsure4: return -19
+        case .unsure5: return -20
+        case .unsure6: return -18
+        case .unsure7: return -15
+        case .unsure8: return -20
+        case .what1: return -4
+        case .what2: return 12
+        case .what3: return -45
         case .winning1: return 100
         case .winning2: return 100
+        case .winning3: return 70
+        case .winning4: return 80
+        case .winning5: return 75
         }
     }
     

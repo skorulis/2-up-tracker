@@ -16,6 +16,7 @@ extension ScaleOfPTView: View {
     
     var body: some View {
         VStack {
+            Text("\(currentImageName)")
             Image(currentImageName)
                 .resizable()
                 .scaledToFit()
