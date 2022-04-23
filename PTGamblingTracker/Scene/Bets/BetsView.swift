@@ -20,14 +20,11 @@ struct BetsView {
 extension BetsView: View {
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Text("Current: $\(viewModel.runningTotal)")
-                    .font(.largeTitle)
-                buttons
-                Divider()
-            }
-            
+        VStack {
+            Text("Current: $\(viewModel.runningTotal)")
+                .font(.largeTitle)
+            buttons
+            Divider()
         }
     }
     
@@ -63,9 +60,9 @@ extension BetsView: View {
         Button(action: {viewModel.addBet(amount: amount)}) {
             ZStack {
                 Rectangle()
-                    .fill(color(amount: amount))
+                    .fill(Color.bet(amount: amount))
                     .frame(height: 44)
-                Text("\(amount)")
+                Text("$\(amount)")
                     .font(.title)
                     .foregroundColor(.white)
             }
@@ -73,13 +70,7 @@ extension BetsView: View {
         }
     }
     
-    private func color(amount: Int) -> Color {
-        if amount < 0 {
-            return Color("negative")
-        } else {
-            return Color("positive")
-        }
-    }
+    
 }
 
 // MARK: - Previews

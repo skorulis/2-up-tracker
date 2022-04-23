@@ -16,7 +16,7 @@ final class MainStore: ObservableObject {
     }
     
     init() {
-        
+        bets.append(.init(time: 0, amount: 100))
     }
     
 }

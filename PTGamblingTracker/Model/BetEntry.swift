@@ -11,4 +11,20 @@ struct BetEntry: Codable {
     
     let time: TimeInterval
     let amount: Int
+    
+    static let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }()
+}
+
+extension BetEntry: Identifiable, Hashable {
+    var id: TimeInterval { time }
+    
+    var timeString: String {
+        let date = Date(timeIntervalSince1970: time)
+        return Self.formatter.string(from: date)
+    }
+    
 }

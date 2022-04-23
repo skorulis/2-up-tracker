@@ -14,8 +14,16 @@ struct ContentView: View {
     var body: some View {
         TabView {
             bets
+            history
             scale
         }
+    }
+    
+    private var history: some View {
+        BetHistoryView(viewModel: factory.resolve())
+            .tabItem {
+                Text("History")
+            }
     }
     
     private var bets: some View {
