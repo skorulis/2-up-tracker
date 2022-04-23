@@ -32,6 +32,24 @@ extension BetsViewModel {
         return store.bets.map { $0.amount }.reduce(0, +)
     }
     
+    var imageOptions: [PTImage] {
+        return PTImage.sorted
+    }
+    
+    var currentImage: PTImage {
+        let top = Double(imageOptions.count - 1)
+        let imageRange: Double = 400
+        var position = (Double(runningTotal) + imageRange) / (imageRange * 2)
+        position = max(min(position, 1), 0)
+        
+        let index = round(top * position)
+        return imageOptions[Int(index)]
+    }
+    
+    var currentImageName: String {
+        return currentImage.imageName
+    }
+    
 }
 
 // MARK: - Behaviors

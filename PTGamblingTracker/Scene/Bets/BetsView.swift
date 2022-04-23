@@ -20,12 +20,19 @@ struct BetsView {
 extension BetsView: View {
     
     var body: some View {
-        VStack {
-            Text("Current: $\(viewModel.runningTotal)")
-                .font(.largeTitle)
-            buttons
-            Divider()
+        ScrollView {
+            VStack {
+                Text("Current: $\(viewModel.runningTotal)")
+                    .font(.largeTitle)
+                Image(viewModel.currentImageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                buttons
+                Divider()
+            }
         }
+        
     }
     
     private var buttons: some View {
