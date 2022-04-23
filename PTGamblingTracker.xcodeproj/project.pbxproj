@@ -26,6 +26,13 @@
 		FADFFA5528138C020066A4D6 /* BetHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA5428138C020066A4D6 /* BetHistoryView.swift */; };
 		FADFFA5728138C190066A4D6 /* BetHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA5628138C190066A4D6 /* BetHistoryViewModel.swift */; };
 		FADFFA5A28138EB20066A4D6 /* Color+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA5928138EB20066A4D6 /* Color+Additions.swift */; };
+		FADFFA5D281392D80066A4D6 /* ASSwiftUI in Resources */ = {isa = PBXBuildFile; fileRef = FADFFA5C281392D80066A4D6 /* ASSwiftUI */; };
+		FADFFA5F281393710066A4D6 /* ASSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FADFFA5E281393710066A4D6 /* ASSwiftUI */; };
+		FADFFA62281393A40066A4D6 /* BetsChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA61281393A40066A4D6 /* BetsChartView.swift */; };
+		FADFFA64281393BD0066A4D6 /* BetsChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA63281393BD0066A4D6 /* BetsChartViewModel.swift */; };
+		FADFFA66281397100066A4D6 /* RunningTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA65281397100066A4D6 /* RunningTotal.swift */; };
+		FADFFA682813984F0066A4D6 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA672813984F0066A4D6 /* LineChartView.swift */; };
+		FADFFA6A28139A150066A4D6 /* ZeroLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA6928139A150066A4D6 /* ZeroLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,12 @@
 		FADFFA5428138C020066A4D6 /* BetHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetHistoryView.swift; sourceTree = "<group>"; };
 		FADFFA5628138C190066A4D6 /* BetHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetHistoryViewModel.swift; sourceTree = "<group>"; };
 		FADFFA5928138EB20066A4D6 /* Color+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Additions.swift"; sourceTree = "<group>"; };
+		FADFFA5C281392D80066A4D6 /* ASSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ASSwiftUI; sourceTree = "<group>"; };
+		FADFFA61281393A40066A4D6 /* BetsChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsChartView.swift; sourceTree = "<group>"; };
+		FADFFA63281393BD0066A4D6 /* BetsChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsChartViewModel.swift; sourceTree = "<group>"; };
+		FADFFA65281397100066A4D6 /* RunningTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTotal.swift; sourceTree = "<group>"; };
+		FADFFA672813984F0066A4D6 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		FADFFA6928139A150066A4D6 /* ZeroLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADFFA5F281393710066A4D6 /* ASSwiftUI in Frameworks */,
 				FADFFA442813858B0066A4D6 /* SwinjectAutoregistration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +97,7 @@
 		FA163DB828137E770072D9FE = {
 			isa = PBXGroup;
 			children = (
+				FADFFA5B281392D80066A4D6 /* Frameworks */,
 				FA163DC328137E770072D9FE /* PTGamblingTracker */,
 				FA163DD428137E770072D9FE /* PTGamblingTrackerTests */,
 				FA163DC228137E770072D9FE /* Products */,
@@ -132,6 +147,7 @@
 			children = (
 				FADFFA3028137FE50066A4D6 /* App */,
 				FADFFA3D281384DB0066A4D6 /* Bets */,
+				FADFFA60281393970066A4D6 /* Chart */,
 				FA163DF428137FCE0072D9FE /* Scale */,
 				FADFFA5828138EA50066A4D6 /* UI */,
 			);
@@ -160,6 +176,7 @@
 			children = (
 				FADFFA382813807E0066A4D6 /* PTImage.swift */,
 				FADFFA4F281388E60066A4D6 /* BetEntry.swift */,
+				FADFFA65281397100066A4D6 /* RunningTotal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +235,25 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		FADFFA5B281392D80066A4D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA5C281392D80066A4D6 /* ASSwiftUI */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		FADFFA60281393970066A4D6 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA61281393A40066A4D6 /* BetsChartView.swift */,
+				FADFFA63281393BD0066A4D6 /* BetsChartViewModel.swift */,
+				FADFFA672813984F0066A4D6 /* LineChartView.swift */,
+				FADFFA6928139A150066A4D6 /* ZeroLineView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +272,7 @@
 			name = PTGamblingTracker;
 			packageProductDependencies = (
 				FADFFA432813858B0066A4D6 /* SwinjectAutoregistration */,
+				FADFFA5E281393710066A4D6 /* ASSwiftUI */,
 			);
 			productName = PTGamblingTracker;
 			productReference = FA163DC128137E770072D9FE /* PTGamblingTracker.app */;
@@ -305,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADFFA5D281392D80066A4D6 /* ASSwiftUI in Resources */,
 				FADFFA3C2813819B0066A4D6 /* Assets.xcassets in Resources */,
 				FA163DCC28137E770072D9FE /* Preview Assets.xcassets in Resources */,
 			);
@@ -328,13 +366,18 @@
 				FADFFA5528138C020066A4D6 /* BetHistoryView.swift in Sources */,
 				FADFFA3428137FE50066A4D6 /* ContentView.swift in Sources */,
 				FADFFA4B281385A40066A4D6 /* SingletonService.swift in Sources */,
+				FADFFA6A28139A150066A4D6 /* ZeroLineView.swift in Sources */,
 				FADFFA3F281384E70066A4D6 /* BetsView.swift in Sources */,
 				FADFFA53281389150066A4D6 /* MainStore.swift in Sources */,
 				FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */,
+				FADFFA64281393BD0066A4D6 /* BetsChartViewModel.swift in Sources */,
 				FADFFA41281384ED0066A4D6 /* BetsViewModel.swift in Sources */,
 				FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */,
 				FADFFA3628137FEB0066A4D6 /* ScaleOfPTView.swift in Sources */,
+				FADFFA62281393A40066A4D6 /* BetsChartView.swift in Sources */,
+				FADFFA66281397100066A4D6 /* RunningTotal.swift in Sources */,
 				FADFFA5A28138EB20066A4D6 /* Color+Additions.swift in Sources */,
+				FADFFA682813984F0066A4D6 /* LineChartView.swift in Sources */,
 				FADFFA3328137FE50066A4D6 /* PTGamblingTrackerApp.swift in Sources */,
 				FADFFA5728138C190066A4D6 /* BetHistoryViewModel.swift in Sources */,
 				FADFFA392813807E0066A4D6 /* PTImage.swift in Sources */,
@@ -623,6 +666,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FADFFA422813858B0066A4D6 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
 			productName = SwinjectAutoregistration;
+		};
+		FADFFA5E281393710066A4D6 /* ASSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ASSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

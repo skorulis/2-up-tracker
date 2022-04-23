@@ -15,6 +15,7 @@ struct ContentView: View {
         TabView {
             bets
             history
+            charts
             scale
         }
     }
@@ -37,6 +38,13 @@ struct ContentView: View {
         ScaleOfPTView()
             .tabItem {
                 Text("Scale")
+            }
+    }
+    
+    private var charts: some View {
+        BetsChartView(viewModel: factory.resolve())
+            .tabItem {
+                Text("Charts")
             }
     }
 }
