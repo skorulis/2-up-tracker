@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            scale
+        }
+    }
+    
+    private var scale: some View {
+        ScaleOfPTView()
+            .tabItem {
+                Text("Scale")
+            }
     }
 }
 

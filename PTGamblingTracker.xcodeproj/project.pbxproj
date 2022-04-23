@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA163DC528137E770072D9FE /* PTGamblingTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA163DC428137E770072D9FE /* PTGamblingTrackerApp.swift */; };
-		FA163DC728137E770072D9FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA163DC628137E770072D9FE /* ContentView.swift */; };
-		FA163DC928137E770072D9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA163DC828137E770072D9FE /* Assets.xcassets */; };
 		FA163DCC28137E770072D9FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA163DCB28137E770072D9FE /* Preview Assets.xcassets */; };
 		FA163DD628137E770072D9FE /* PTGamblingTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA163DD528137E770072D9FE /* PTGamblingTrackerTests.swift */; };
-		FA163DE028137E770072D9FE /* PTGamblingTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA163DDF28137E770072D9FE /* PTGamblingTrackerUITests.swift */; };
-		FA163DE228137E770072D9FE /* PTGamblingTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA163DE128137E770072D9FE /* PTGamblingTrackerUITestsLaunchTests.swift */; };
+		FADFFA3328137FE50066A4D6 /* PTGamblingTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA3128137FE50066A4D6 /* PTGamblingTrackerApp.swift */; };
+		FADFFA3428137FE50066A4D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA3228137FE50066A4D6 /* ContentView.swift */; };
+		FADFFA3628137FEB0066A4D6 /* ScaleOfPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA3528137FEB0066A4D6 /* ScaleOfPTView.swift */; };
+		FADFFA392813807E0066A4D6 /* PTImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA382813807E0066A4D6 /* PTImage.swift */; };
+		FADFFA3C2813819B0066A4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADFFA3B2813819B0066A4D6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +24,18 @@
 			remoteGlobalIDString = FA163DC028137E770072D9FE;
 			remoteInfo = PTGamblingTracker;
 		};
-		FA163DDC28137E770072D9FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA163DB928137E770072D9FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA163DC028137E770072D9FE;
-			remoteInfo = PTGamblingTracker;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FA163DC128137E770072D9FE /* PTGamblingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTGamblingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA163DC428137E770072D9FE /* PTGamblingTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTGamblingTrackerApp.swift; sourceTree = "<group>"; };
-		FA163DC628137E770072D9FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FA163DC828137E770072D9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA163DCB28137E770072D9FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA163DD128137E770072D9FE /* PTGamblingTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTGamblingTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA163DD528137E770072D9FE /* PTGamblingTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTGamblingTrackerTests.swift; sourceTree = "<group>"; };
-		FA163DDB28137E770072D9FE /* PTGamblingTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTGamblingTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA163DDF28137E770072D9FE /* PTGamblingTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTGamblingTrackerUITests.swift; sourceTree = "<group>"; };
-		FA163DE128137E770072D9FE /* PTGamblingTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTGamblingTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FADFFA3128137FE50066A4D6 /* PTGamblingTrackerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTGamblingTrackerApp.swift; sourceTree = "<group>"; };
+		FADFFA3228137FE50066A4D6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FADFFA3528137FEB0066A4D6 /* ScaleOfPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOfPTView.swift; sourceTree = "<group>"; };
+		FADFFA382813807E0066A4D6 /* PTImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTImage.swift; sourceTree = "<group>"; };
+		FADFFA3B2813819B0066A4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA163DD828137E770072D9FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +61,6 @@
 			children = (
 				FA163DC328137E770072D9FE /* PTGamblingTracker */,
 				FA163DD428137E770072D9FE /* PTGamblingTrackerTests */,
-				FA163DDE28137E770072D9FE /* PTGamblingTrackerUITests */,
 				FA163DC228137E770072D9FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +70,6 @@
 			children = (
 				FA163DC128137E770072D9FE /* PTGamblingTracker.app */,
 				FA163DD128137E770072D9FE /* PTGamblingTrackerTests.xctest */,
-				FA163DDB28137E770072D9FE /* PTGamblingTrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +77,9 @@
 		FA163DC328137E770072D9FE /* PTGamblingTracker */ = {
 			isa = PBXGroup;
 			children = (
-				FA163DC428137E770072D9FE /* PTGamblingTrackerApp.swift */,
-				FA163DC628137E770072D9FE /* ContentView.swift */,
-				FA163DC828137E770072D9FE /* Assets.xcassets */,
+				FADFFA3A2813819B0066A4D6 /* Resources */,
+				FADFFA37281380680066A4D6 /* Model */,
+				FA163DEE28137E9F0072D9FE /* Scene */,
 				FA163DCA28137E770072D9FE /* Preview Content */,
 			);
 			path = PTGamblingTracker;
@@ -118,13 +101,46 @@
 			path = PTGamblingTrackerTests;
 			sourceTree = "<group>";
 		};
-		FA163DDE28137E770072D9FE /* PTGamblingTrackerUITests */ = {
+		FA163DEE28137E9F0072D9FE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				FA163DDF28137E770072D9FE /* PTGamblingTrackerUITests.swift */,
-				FA163DE128137E770072D9FE /* PTGamblingTrackerUITestsLaunchTests.swift */,
+				FADFFA3028137FE50066A4D6 /* App */,
+				FA163DF428137FCE0072D9FE /* Scale */,
 			);
-			path = PTGamblingTrackerUITests;
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FA163DF428137FCE0072D9FE /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA3528137FEB0066A4D6 /* ScaleOfPTView.swift */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		FADFFA3028137FE50066A4D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA3128137FE50066A4D6 /* PTGamblingTrackerApp.swift */,
+				FADFFA3228137FE50066A4D6 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FADFFA37281380680066A4D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA382813807E0066A4D6 /* PTImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FADFFA3A2813819B0066A4D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA3B2813819B0066A4D6 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +181,6 @@
 			productReference = FA163DD128137E770072D9FE /* PTGamblingTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FA163DDA28137E770072D9FE /* PTGamblingTrackerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA163DEB28137E770072D9FE /* Build configuration list for PBXNativeTarget "PTGamblingTrackerUITests" */;
-			buildPhases = (
-				FA163DD728137E770072D9FE /* Sources */,
-				FA163DD828137E770072D9FE /* Frameworks */,
-				FA163DD928137E770072D9FE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA163DDD28137E770072D9FE /* PBXTargetDependency */,
-			);
-			name = PTGamblingTrackerUITests;
-			productName = PTGamblingTrackerUITests;
-			productReference = FA163DDB28137E770072D9FE /* PTGamblingTrackerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +195,6 @@
 						CreatedOnToolsVersion = 13.2;
 					};
 					FA163DD028137E770072D9FE = {
-						CreatedOnToolsVersion = 13.2;
-						TestTargetID = FA163DC028137E770072D9FE;
-					};
-					FA163DDA28137E770072D9FE = {
 						CreatedOnToolsVersion = 13.2;
 						TestTargetID = FA163DC028137E770072D9FE;
 					};
@@ -221,7 +215,6 @@
 			targets = (
 				FA163DC028137E770072D9FE /* PTGamblingTracker */,
 				FA163DD028137E770072D9FE /* PTGamblingTrackerTests */,
-				FA163DDA28137E770072D9FE /* PTGamblingTrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,19 +224,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADFFA3C2813819B0066A4D6 /* Assets.xcassets in Resources */,
 				FA163DCC28137E770072D9FE /* Preview Assets.xcassets in Resources */,
-				FA163DC928137E770072D9FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FA163DCF28137E770072D9FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA163DD928137E770072D9FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,8 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA163DC728137E770072D9FE /* ContentView.swift in Sources */,
-				FA163DC528137E770072D9FE /* PTGamblingTrackerApp.swift in Sources */,
+				FADFFA3428137FE50066A4D6 /* ContentView.swift in Sources */,
+				FADFFA3628137FEB0066A4D6 /* ScaleOfPTView.swift in Sources */,
+				FADFFA3328137FE50066A4D6 /* PTGamblingTrackerApp.swift in Sources */,
+				FADFFA392813807E0066A4D6 /* PTImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +258,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA163DD728137E770072D9FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA163DE228137E770072D9FE /* PTGamblingTrackerUITestsLaunchTests.swift in Sources */,
-				FA163DE028137E770072D9FE /* PTGamblingTrackerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +265,6 @@
 			isa = PBXTargetDependency;
 			target = FA163DC028137E770072D9FE /* PTGamblingTracker */;
 			targetProxy = FA163DD228137E770072D9FE /* PBXContainerItemProxy */;
-		};
-		FA163DDD28137E770072D9FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA163DC028137E770072D9FE /* PTGamblingTracker */;
-			targetProxy = FA163DDC28137E770072D9FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,42 +483,6 @@
 			};
 			name = Release;
 		};
-		FA163DEC28137E770072D9FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X4S6MUZL2D;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.skorulis.PTGamblingTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PTGamblingTracker;
-			};
-			name = Debug;
-		};
-		FA163DED28137E770072D9FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X4S6MUZL2D;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.skorulis.PTGamblingTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PTGamblingTracker;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,15 +509,6 @@
 			buildConfigurations = (
 				FA163DE928137E770072D9FE /* Debug */,
 				FA163DEA28137E770072D9FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA163DEB28137E770072D9FE /* Build configuration list for PBXNativeTarget "PTGamblingTrackerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA163DEC28137E770072D9FE /* Debug */,
-				FA163DED28137E770072D9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
