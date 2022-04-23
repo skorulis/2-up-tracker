@@ -9,6 +9,8 @@ import Foundation
 
 enum PTImage: String, CaseIterable {
     
+    case neutral // Single image at the neutral position
+    
     case angry1
     case angry2
     
@@ -29,6 +31,7 @@ extension PTImage {
     
     var value: Double {
         switch self {
+        case .neutral: return 0
         case .angry1: return -100
         case .angry2: return -100
         case .happy1: return 50
@@ -50,8 +53,43 @@ extension PTImage {
     }
     
     static var sorted: [PTImage] {
-        return allCases.sorted { p1, p2 in
-            return p1.value < p2.value
+        return allCases.sorted(by: PTImage.sort(p1:p2:))
+    }
+    
+    static var positiveSorted: [PTImage] {
+        return allCases
+            .filter { $0.value > 0}
+            .sorted(by: PTImage.sort(p1:p2:))
+    }
+    
+    static var negativeSorted: [PTImage] {
+        return allCases
+            .filter { $0.value < 0}
+            .sorted(by: PTImage.sort(p1:p2:))
+    }
+    
+    static func sort(p1: PTImage, p2: PTImage) -> Bool {
+        return p1.value < p2.value
+    }
+    
+    static func image(value: Double) -> PTImage {
+        if value == 0.5 {
+            return .neutral
+        } else if value < 0.5 {
+            let images = negativeSorted
+            let top = Double(images.count - 1)
+            let index = round(top * value * 2)
+            return images[Int(index)]
+        } else {
+            let images = positiveSorted
+            let top = Double(images.count - 1)
+            let adjusted = (value - 0.5) * 2
+            let index = round(top * adjusted)
+            return images[Int(index)]
         }
     }
+    
+    
+    
+    
 }

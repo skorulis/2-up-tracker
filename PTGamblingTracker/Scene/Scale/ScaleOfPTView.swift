@@ -35,9 +35,7 @@ private extension ScaleOfPTView {
     }
     
     var currentImage: PTImage {
-        let top = CGFloat(imageOptions.count - 1)
-        let index = round(top * position)
-        return imageOptions[Int(index)]
+        return PTImage.image(value: position)
     }
     
     var currentImageName: String {
