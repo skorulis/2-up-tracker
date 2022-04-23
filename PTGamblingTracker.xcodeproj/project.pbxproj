@@ -21,6 +21,8 @@
 		FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA48281385A40066A4D6 /* GenericFactory.swift */; };
 		FADFFA4D281385A40066A4D6 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA49281385A40066A4D6 /* ErrorService.swift */; };
 		FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA4A281385A40066A4D6 /* IOC.swift */; };
+		FADFFA50281388E60066A4D6 /* BetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA4F281388E60066A4D6 /* BetEntry.swift */; };
+		FADFFA53281389150066A4D6 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA52281389150066A4D6 /* MainStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FADFFA48281385A40066A4D6 /* GenericFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFactory.swift; sourceTree = "<group>"; };
 		FADFFA49281385A40066A4D6 /* ErrorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		FADFFA4A281385A40066A4D6 /* IOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOC.swift; sourceTree = "<group>"; };
+		FADFFA4F281388E60066A4D6 /* BetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetEntry.swift; sourceTree = "<group>"; };
+		FADFFA52281389150066A4D6 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				FADFFA37281380680066A4D6 /* Model */,
 				FA163DEE28137E9F0072D9FE /* Scene */,
 				FADFFA45281385A40066A4D6 /* Service */,
+				FADFFA51281389100066A4D6 /* Store */,
 				FA163DCA28137E770072D9FE /* Preview Content */,
 			);
 			path = PTGamblingTracker;
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FADFFA382813807E0066A4D6 /* PTImage.swift */,
+				FADFFA4F281388E60066A4D6 /* BetEntry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +191,14 @@
 				FADFFA4A281385A40066A4D6 /* IOC.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		FADFFA51281389100066A4D6 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA52281389150066A4D6 /* MainStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADFFA50281388E60066A4D6 /* BetEntry.swift in Sources */,
 				FADFFA3428137FE50066A4D6 /* ContentView.swift in Sources */,
 				FADFFA4B281385A40066A4D6 /* SingletonService.swift in Sources */,
 				FADFFA3F281384E70066A4D6 /* BetsView.swift in Sources */,
+				FADFFA53281389150066A4D6 /* MainStore.swift in Sources */,
 				FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */,
 				FADFFA41281384ED0066A4D6 /* BetsViewModel.swift in Sources */,
 				FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */,

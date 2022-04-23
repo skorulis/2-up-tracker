@@ -54,7 +54,8 @@ public final class IOC {
     }
     
     private func registerStores() {
-        
+        container.autoregister(MainStore.self, initializer: MainStore.init)
+            .inObjectScope(.container)
     }
     
     private func setupViewModels() {
@@ -63,6 +64,10 @@ public final class IOC {
     
     func resolve<ServiceType>(_ type: ServiceType.Type) -> ServiceType? {
         return container.resolve(type)
+    }
+    
+    var factory: GenericFactory {
+        return resolve(GenericFactory.self)!
     }
     
 }

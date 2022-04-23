@@ -60,7 +60,7 @@ extension BetsView: View {
     }
     
     private func betButton(amount: Int) -> some View {
-        Button(action: {viewModel.addBet(value: amount)}) {
+        Button(action: {viewModel.addBet(amount: amount)}) {
             ZStack {
                 Rectangle()
                     .fill(color(amount: amount))
@@ -86,8 +86,12 @@ extension BetsView: View {
 
 struct BetsView_Previews: PreviewProvider {
     
+    static func previews(ioc: IOC) -> some View {
+        BetsView(viewModel: ioc.factory.resolve())
+    }
+    
     static var previews: some View {
-        BetsView(viewModel: .init())
+        return previews(ioc: .shared)
     }
 }
 
