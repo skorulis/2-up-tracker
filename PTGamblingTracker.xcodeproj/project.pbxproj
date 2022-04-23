@@ -72,6 +72,7 @@
 		FADFFA65281397100066A4D6 /* RunningTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTotal.swift; sourceTree = "<group>"; };
 		FADFFA672813984F0066A4D6 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		FADFFA6928139A150066A4D6 /* ZeroLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroLineView.swift; sourceTree = "<group>"; };
+		FADFFA6C2813CA450066A4D6 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		FA163DB828137E770072D9FE = {
 			isa = PBXGroup;
 			children = (
+				FADFFA6B2813CA3B0066A4D6 /* Configs */,
 				FADFFA5B281392D80066A4D6 /* Frameworks */,
 				FA163DC328137E770072D9FE /* PTGamblingTracker */,
 				FA163DD428137E770072D9FE /* PTGamblingTrackerTests */,
@@ -254,6 +256,14 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
+		FADFFA6B2813CA3B0066A4D6 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFA6C2813CA450066A4D6 /* Common.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,6 +416,7 @@
 /* Begin XCBuildConfiguration section */
 		FA163DE328137E770072D9FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADFFA6C2813CA450066A4D6 /* Common.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -467,6 +478,7 @@
 		};
 		FA163DE428137E770072D9FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADFFA6C2813CA450066A4D6 /* Common.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -522,6 +534,7 @@
 		};
 		FA163DE628137E770072D9FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADFFA6C2813CA450066A4D6 /* Common.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -542,7 +555,6 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skorulis.PTGamblingTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,6 +563,7 @@
 		};
 		FA163DE728137E770072D9FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADFFA6C2813CA450066A4D6 /* Common.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -571,7 +584,6 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skorulis.PTGamblingTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

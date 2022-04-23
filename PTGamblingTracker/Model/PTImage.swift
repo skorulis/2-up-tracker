@@ -16,10 +16,10 @@ enum PTImage: String, CaseIterable {
     case happy1, happy2, happy3, happy4, happy5, happy6, happy7, happy8
     case odd2, odd3
     case ok1, ok2
-    case plain1, plain2, plain3, plain4, plain5, plain6, plain7
+    case plain1, plain2, plain3, plain5, plain6, plain7
     case shocked1, shocked2, shocked3, shocked4
     case stoned1, stoned2
-    case unsure1, unsure2, unsure3, unsure4, unsure5, unsure6, unsure7, unsure8
+    case unsure1, unsure2, unsure3, unsure4, unsure5, unsure6, unsure7, unsure8, unsure9
     case what1, what2, what3
     case winning1, winning2, winning3, winning4, winning5
     
@@ -53,7 +53,6 @@ extension PTImage {
         case .plain1: return 10
         case .plain2: return 10
         case .plain3: return 10
-        case .plain4: return 10
         case .plain5: return 20
         case .plain6: return 20
         case .plain7: return 20
@@ -71,8 +70,9 @@ extension PTImage {
         case .unsure6: return -18
         case .unsure7: return -15
         case .unsure8: return -20
-        case .what1: return -4
-        case .what2: return 12
+        case .unsure9: return -23
+        case .what1: return 4
+        case .what2: return -12
         case .what3: return -45
         case .winning1: return 100
         case .winning2: return 100
