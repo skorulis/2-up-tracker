@@ -5,11 +5,12 @@
 //  Created by Alexander Skorulis on 23/4/2022.
 //
 
+import ASKCore
 import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject private var factory: GenericFactory
+    @Environment(\.factory) private var factory
     
     var body: some View {
         TabView {

@@ -8,16 +8,14 @@
 import Foundation
 import Swinject
 import SwinjectAutoregistration
+import ASKCore
 
-public final class IOC {
+public final class IOC: IOCService {
     
     static let shared: IOC = IOC()
     
-    public let container: Container
-    
-    public init() {
-        container = Container()
-        setupFactories()
+    public override init() {
+        super.init()
         setupServices()
         setupViewModels()
         setupProcessors()
@@ -32,13 +30,6 @@ public final class IOC {
     
     private func startup() {
         
-    }
-    
-    private func setupFactories() {
-        container.register(GenericFactory.self) { (_) -> GenericFactory in
-            return GenericFactory(container: self.container)
-        }
-        .inObjectScope(.container)
     }
     
     private func setupProcessors() {
@@ -66,10 +57,6 @@ public final class IOC {
     
     func resolve<ServiceType>(_ type: ServiceType.Type) -> ServiceType? {
         return container.resolve(type)
-    }
-    
-    var factory: GenericFactory {
-        return resolve(GenericFactory.self)!
     }
     
 }

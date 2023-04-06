@@ -18,7 +18,6 @@
 		FADFFA41281384ED0066A4D6 /* BetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA40281384ED0066A4D6 /* BetsViewModel.swift */; };
 		FADFFA442813858B0066A4D6 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = FADFFA432813858B0066A4D6 /* SwinjectAutoregistration */; };
 		FADFFA4B281385A40066A4D6 /* SingletonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA47281385A40066A4D6 /* SingletonService.swift */; };
-		FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA48281385A40066A4D6 /* GenericFactory.swift */; };
 		FADFFA4D281385A40066A4D6 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA49281385A40066A4D6 /* ErrorService.swift */; };
 		FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA4A281385A40066A4D6 /* IOC.swift */; };
 		FADFFA50281388E60066A4D6 /* BetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA4F281388E60066A4D6 /* BetEntry.swift */; };
@@ -33,6 +32,7 @@
 		FADFFA66281397100066A4D6 /* RunningTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA65281397100066A4D6 /* RunningTotal.swift */; };
 		FADFFA682813984F0066A4D6 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA672813984F0066A4D6 /* LineChartView.swift */; };
 		FADFFA6A28139A150066A4D6 /* ZeroLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADFFA6928139A150066A4D6 /* ZeroLineView.swift */; };
+		FAE936E52869BC0800977BD2 /* ASKCore in Frameworks */ = {isa = PBXBuildFile; productRef = FAE936E42869BC0800977BD2 /* ASKCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,6 @@
 		FADFFA3E281384E70066A4D6 /* BetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsView.swift; sourceTree = "<group>"; };
 		FADFFA40281384ED0066A4D6 /* BetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsViewModel.swift; sourceTree = "<group>"; };
 		FADFFA47281385A40066A4D6 /* SingletonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonService.swift; sourceTree = "<group>"; };
-		FADFFA48281385A40066A4D6 /* GenericFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericFactory.swift; sourceTree = "<group>"; };
 		FADFFA49281385A40066A4D6 /* ErrorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		FADFFA4A281385A40066A4D6 /* IOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOC.swift; sourceTree = "<group>"; };
 		FADFFA4F281388E60066A4D6 /* BetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetEntry.swift; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE936E52869BC0800977BD2 /* ASKCore in Frameworks */,
 				FADFFA5F281393710066A4D6 /* ASSwiftUI in Frameworks */,
 				FADFFA442813858B0066A4D6 /* SwinjectAutoregistration in Frameworks */,
 			);
@@ -214,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				FADFFA47281385A40066A4D6 /* SingletonService.swift */,
-				FADFFA48281385A40066A4D6 /* GenericFactory.swift */,
 				FADFFA49281385A40066A4D6 /* ErrorService.swift */,
 				FADFFA4A281385A40066A4D6 /* IOC.swift */,
 			);
@@ -283,6 +282,7 @@
 			packageProductDependencies = (
 				FADFFA432813858B0066A4D6 /* SwinjectAutoregistration */,
 				FADFFA5E281393710066A4D6 /* ASSwiftUI */,
+				FAE936E42869BC0800977BD2 /* ASKCore */,
 			);
 			productName = PTGamblingTracker;
 			productReference = FA163DC128137E770072D9FE /* PTGamblingTracker.app */;
@@ -336,6 +336,7 @@
 			mainGroup = FA163DB828137E770072D9FE;
 			packageReferences = (
 				FADFFA422813858B0066A4D6 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				FAE936E32869BC0800977BD2 /* XCRemoteSwiftPackageReference "ASKCore" */,
 			);
 			productRefGroup = FA163DC228137E770072D9FE /* Products */;
 			projectDirPath = "";
@@ -382,7 +383,6 @@
 				FADFFA4E281385A40066A4D6 /* IOC.swift in Sources */,
 				FADFFA64281393BD0066A4D6 /* BetsChartViewModel.swift in Sources */,
 				FADFFA41281384ED0066A4D6 /* BetsViewModel.swift in Sources */,
-				FADFFA4C281385A40066A4D6 /* GenericFactory.swift in Sources */,
 				FADFFA3628137FEB0066A4D6 /* ScaleOfPTView.swift in Sources */,
 				FADFFA62281393A40066A4D6 /* BetsChartView.swift in Sources */,
 				FADFFA66281397100066A4D6 /* RunningTotal.swift in Sources */,
@@ -671,6 +671,14 @@
 				kind = branch;
 			};
 		};
+		FAE936E32869BC0800977BD2 /* XCRemoteSwiftPackageReference "ASKCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/skorulis/ASKCore";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -682,6 +690,11 @@
 		FADFFA5E281393710066A4D6 /* ASSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ASSwiftUI;
+		};
+		FAE936E42869BC0800977BD2 /* ASKCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAE936E32869BC0800977BD2 /* XCRemoteSwiftPackageReference "ASKCore" */;
+			productName = ASKCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

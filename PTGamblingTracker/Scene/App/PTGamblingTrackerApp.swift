@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import ASKCore
 
 @main
 struct PTGamblingTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(IOC.shared.container.resolve(GenericFactory.self)!)
+                .environment(\.factory, IOC.shared.factory)
         }
     }
 }
