@@ -25,6 +25,7 @@ struct ContentView: View {
         BetHistoryView(viewModel: factory.resolve())
             .tabItem {
                 Text("History")
+                Image(systemName: "list.bullet.rectangle.portrait")
             }
     }
     
@@ -32,13 +33,15 @@ struct ContentView: View {
         BetsView(viewModel: factory.resolve())
             .tabItem {
                 Text("Bets")
+                Image(systemName: "dollarsign.arrow.circlepath")
             }
     }
     
     private var scale: some View {
         ScaleOfPTView()
             .tabItem {
-                Text("Scale")
+                Text("Settings")
+                Image(systemName: "gearshape.fill")
             }
     }
     
@@ -46,6 +49,7 @@ struct ContentView: View {
         BetsChartView(viewModel: factory.resolve())
             .tabItem {
                 Text("Charts")
+                Image(systemName: "chart.xyaxis.line")
             }
     }
 }
