@@ -1,5 +1,6 @@
 //Created by Alexander Skorulis on 7/4/2023.
 
+import ASKDesignSystem
 import Foundation
 import SwiftUI
 
@@ -15,12 +16,22 @@ struct SettingsView {
 extension SettingsView: View {
     
     var body: some View {
-        VStack {
+        PageTemplate(nav: nav, content: content)
+    }
+    
+    private func content() -> some View {
+        VStack(alignment: .leading) {
+            Text("Betting Limit")
+                .typography(.subtitle)
             TextField("Limit", text: $viewModel.limit)
                 .keyboardType(.numberPad)
                 .textFieldStyle(.roundedBorder)
-                .padding()
         }
+        .padding(.horizontal, 16)
+    }
+    
+    private func nav() -> some View {
+        NavBar(mid: NavBarItem.title("Settings"))
     }
 }
 

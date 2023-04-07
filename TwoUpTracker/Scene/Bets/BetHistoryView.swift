@@ -1,10 +1,6 @@
-//
-//  BetHistoryView.swift
-//  PTGamblingTracker
-//
 //  Created by Alexander Skorulis on 23/4/2022.
-//
 
+import ASKDesignSystem
 import Foundation
 import SwiftUI
 
@@ -20,20 +16,24 @@ struct BetHistoryView {
 extension BetHistoryView: View {
     
     var body: some View {
-        List {
-            Text("History")
-                .font(.title)
-            ForEach(viewModel.store.bets.reversed(), id: \.self) { bet in
-                HStack {
-                    Text(bet.timeString)
-                    Spacer()
-                    Text("$\(bet.amount)")
-                        .foregroundColor(.bet(amount: bet.amount))
-                }
-                
+        ListTemplate(nav: nav, content: content)
+    }
+    
+    private func content() -> some View {
+        ForEach(viewModel.store.bets.reversed(), id: \.self) { bet in
+            HStack {
+                Text(bet.timeString)
+                Spacer()
+                Text("$\(bet.amount)")
+                    .foregroundColor(.bet(amount: bet.amount))
             }
-            .onDelete(perform: viewModel.delete(at:))
+            
         }
+        .onDelete(perform: viewModel.delete(at:))
+    }
+    
+    private func nav() -> some View {
+        NavBar(mid: NavBarItem.title("History"))
     }
 }
 
@@ -46,7 +46,15 @@ struct BetHistoryView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        return previews(ioc: IOC())
+        previews(ioc: IOC())
+        filled
+    }
+    
+    static var filled: some View {
+        let ioc = IOC()
+        let store = ioc.resolve(MainStore.self)!
+        store.bets = PreviewData.bets
+        return BetHistoryView(viewModel: ioc.resolve())
     }
 }
 
