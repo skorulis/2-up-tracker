@@ -12,25 +12,15 @@ import ASKCore
 
 public final class IOC: IOCService {
     
-    static let shared: IOC = IOC()
-    
-    public override init() {
-        super.init()
+    override init(purpose: IOCPurpose = .testing) {
+        super.init(purpose: purpose)
         setupServices()
         setupViewModels()
         setupProcessors()
         setupAccess()
-        registerStores()
-        
-        DispatchQueue.main.async {
-            self.startup()
-        }
-        
+        registerStores()        
     }
     
-    private func startup() {
-        
-    }
     
     private func setupProcessors() {
         

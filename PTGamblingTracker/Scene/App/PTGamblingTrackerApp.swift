@@ -10,10 +10,13 @@ import ASKCore
 
 @main
 struct PTGamblingTrackerApp: App {
+    
+    let ioc: IOC = IOC()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.factory, IOC.shared.factory)
+                .environment(\.factory, ioc.factory)
         }
     }
 }

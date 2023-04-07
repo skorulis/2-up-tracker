@@ -50,7 +50,7 @@ struct BetsChartView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        return previews(ioc: .shared)
+        return previews(ioc: IOC())
     }
 }
 
