@@ -1,10 +1,6 @@
-//
-//  MainStore.swift
-//  PTGamblingTracker
-//
 //  Created by Alexander Skorulis on 23/4/2022.
-//
 
+import ASKCore
 import Foundation
 
 final class MainStore: ObservableObject {
@@ -12,16 +8,16 @@ final class MainStore: ObservableObject {
     @Published var bets: [BetEntry] = [] {
         didSet {
             let data = try! JSONEncoder().encode(bets)
-            defaults.set(data, forKey: Self.betsKey)
-            defaults.synchronize()
+            keyValueStore.set(data, forKey: Self.betsKey)
         }
     }
     
-    var defaults: UserDefaults = UserDefaults.standard
+    let keyValueStore: PKeyValueStore
     static let betsKey: String = "betsKey"
     
-    init() {
-        if let data = defaults.data(forKey: Self.betsKey),
+    init(keyValueStore: PKeyValueStore) {
+        self.keyValueStore = keyValueStore
+        if let data = keyValueStore.data(forKey: Self.betsKey),
            let obj = try? JSONDecoder().decode([BetEntry].self, from: data) {
             self.bets = obj
         }

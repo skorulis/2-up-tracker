@@ -35,6 +35,15 @@ public final class IOC: IOCService {
     }
     
     private func registerStores() {
+        switch purpose {
+        case .testing:
+            container.autoregister(PKeyValueStore.self, initializer: InMemoryDefaults.init)
+                .inObjectScope(.container)
+        case .normal:
+            container.autoregister(PKeyValueStore.self, initializer: UserDefaults.init)
+                .inObjectScope(.container)
+        }
+            
         container.autoregister(MainStore.self, initializer: MainStore.init)
             .inObjectScope(.container)
     }
