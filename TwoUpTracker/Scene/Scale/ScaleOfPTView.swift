@@ -36,7 +36,7 @@ private extension ScaleOfPTView {
     }
     
     var currentImage: PTImage {
-        return PTImage.image(value: position)
+        return PTImage.neutral
     }
     
     var currentImageName: String {

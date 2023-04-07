@@ -26,6 +26,16 @@ extension SettingsView: View {
             TextField("Limit", text: $viewModel.limit)
                 .keyboardType(.numberPad)
                 .textFieldStyle(.roundedBorder)
+            
+            Text("Image type")
+                .typography(.subtitle)
+            
+            Picker("Image Type", selection: $viewModel.imageType) {
+                ForEach(ImageType.allCases) { type in
+                    Text(type.name)
+                        .tag(type)
+                }
+            }
         }
         .padding(.horizontal, 16)
     }

@@ -22,9 +22,6 @@ enum PTImage: String, CaseIterable {
     case unsure1, unsure2, unsure3, unsure4, unsure5, unsure6, unsure7, unsure8, unsure9
     case what1, what2, what3
     case winning1, winning2, winning3, winning4, winning5
-    
-    
-    
 }
 
 extension PTImage {
@@ -102,24 +99,11 @@ extension PTImage {
         return p1.value < p2.value
     }
     
-    static func image(value: Double) -> PTImage {
-        if value == 0.5 {
-            return .neutral
-        } else if value < 0.5 {
-            let images = negativeSorted
-            let top = Double(images.count - 1)
-            let index = round(top * value * 2)
-            return images[Int(index)]
-        } else {
-            let images = positiveSorted
-            let top = Double(images.count - 1)
-            let adjusted = (value - 0.5) * 2
-            let index = round(top * adjusted)
-            return images[Int(index)]
-        }
-    }
-    
-    
-    
-    
+}
+
+struct PTImageProvider: StatusImageProvider {
+    typealias ObjectType = PTImage
+    var negativeSorted: [PTImage] { PTImage.negativeSorted }
+    var neutral: PTImage { PTImage.neutral }
+    var positiveSorted: [PTImage] { PTImage.positiveSorted }
 }

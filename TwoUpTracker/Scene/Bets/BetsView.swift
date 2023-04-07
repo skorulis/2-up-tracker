@@ -24,10 +24,12 @@ extension BetsView: View {
             VStack {
                 Text("Current: $\(viewModel.runningTotal)")
                     .font(.largeTitle)
-                Image(viewModel.currentImageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 200)
+                PTImageView(
+                    total: viewModel.runningTotal,
+                    limit: viewModel.store.limit,
+                    provider: viewModel.store.imageType.provider
+                )
+                
                 buttons
                 Divider()
             }

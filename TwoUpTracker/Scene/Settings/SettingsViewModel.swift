@@ -14,11 +14,21 @@ final class SettingsViewModel: ObservableObject {
         }
     }
     
+    @Published var imageType: ImageType = .emoji {
+        didSet {
+            store.imageType = imageType
+        }
+    }
+    
     init(store: MainStore) {
         self.store = store
         store.$limit
             .map { "\($0)"}
             .assign(to: &$limit)
+        
+        store.$imageType
+            .assign(to: &$imageType)
+        
     }
     
 }
