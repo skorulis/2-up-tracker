@@ -35,6 +35,8 @@
 		FA1CE53729DFCD0E002C3E41 /* ASKDesignSystem in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE53629DFCD0E002C3E41 /* ASKDesignSystem */; };
 		FA1CE53929DFCDFB002C3E41 /* ASKDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = FA1CE53829DFCDFB002C3E41 /* ASKDesignSystem */; };
 		FA1CE53B29DFD328002C3E41 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE53A29DFD328002C3E41 /* PreviewData.swift */; };
+		FA1CE53E29DFD7FA002C3E41 /* BetStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE53D29DFD7FA002C3E41 /* BetStatsView.swift */; };
+		FA1CE54029DFD804002C3E41 /* BetStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE53F29DFD804002C3E41 /* BetStatsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		FA1CE53329DFC62D002C3E41 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		FA1CE53629DFCD0E002C3E41 /* ASKDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ASKDesignSystem; sourceTree = "<group>"; };
 		FA1CE53A29DFD328002C3E41 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		FA1CE53D29DFD7FA002C3E41 /* BetStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetStatsView.swift; sourceTree = "<group>"; };
+		FA1CE53F29DFD804002C3E41 /* BetStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetStatsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 		FA1CE4E429DFA874002C3E41 /* Bets */ = {
 			isa = PBXGroup;
 			children = (
+				FA1CE53C29DFD79E002C3E41 /* Stats */,
 				FA1CE4E529DFA874002C3E41 /* BetHistoryViewModel.swift */,
 				FA1CE4E629DFA874002C3E41 /* BetHistoryView.swift */,
 				FA1CE4E729DFA874002C3E41 /* BetsView.swift */,
@@ -291,6 +296,15 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA1CE53C29DFD79E002C3E41 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CE53D29DFD7FA002C3E41 /* BetStatsView.swift */,
+				FA1CE53F29DFD804002C3E41 /* BetStatsViewModel.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +419,7 @@
 			files = (
 				FA1CE50329DFA874002C3E41 /* BetsViewModel.swift in Sources */,
 				FA1CE50A29DFA874002C3E41 /* BetsChartView.swift in Sources */,
+				FA1CE53E29DFD7FA002C3E41 /* BetStatsView.swift in Sources */,
 				FA1CE53B29DFD328002C3E41 /* PreviewData.swift in Sources */,
 				FA1CE50F29DFA874002C3E41 /* IOC.swift in Sources */,
 				FA1CE50829DFA874002C3E41 /* BetsChartViewModel.swift in Sources */,
@@ -421,6 +436,7 @@
 				FA1CE50D29DFA874002C3E41 /* RunningTotal.swift in Sources */,
 				FA1CE50129DFA874002C3E41 /* BetHistoryView.swift in Sources */,
 				FA1CE50C29DFA874002C3E41 /* PTImage.swift in Sources */,
+				FA1CE54029DFD804002C3E41 /* BetStatsViewModel.swift in Sources */,
 				FA1CE53429DFC62D002C3E41 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

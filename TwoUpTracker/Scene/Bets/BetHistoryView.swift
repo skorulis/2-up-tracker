@@ -9,6 +9,7 @@ import SwiftUI
 struct BetHistoryView {
     
     @StateObject var viewModel: BetHistoryViewModel
+    @Environment(\.factory) private var factory
 }
 
 // MARK: - Rendering
@@ -17,6 +18,9 @@ extension BetHistoryView: View {
     
     var body: some View {
         ListTemplate(nav: nav, content: content)
+            .sheet(isPresented: $viewModel.showingStats) {
+                BetStatsView(viewModel: factory.resolve())
+            }
     }
     
     private func content() -> some View {
@@ -33,7 +37,13 @@ extension BetHistoryView: View {
     }
     
     private func nav() -> some View {
-        NavBar(mid: NavBarItem.title("History"))
+        NavBar(
+            mid: NavBarItem.title("History"),
+            right: NavBarItem.iconButton(
+                Image(systemName: "chart.line.uptrend.xyaxis"),
+                viewModel.showStats
+            )
+        )
     }
 }
 
@@ -55,6 +65,7 @@ struct BetHistoryView_Previews: PreviewProvider {
         let store = ioc.resolve(MainStore.self)!
         store.bets = PreviewData.bets
         return BetHistoryView(viewModel: ioc.resolve())
+            .environment(\.factory, ioc.factory)
     }
 }
 

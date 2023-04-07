@@ -13,6 +13,8 @@ final class BetHistoryViewModel: ObservableObject {
     let store: MainStore
     private var subscribers: Set<AnyCancellable> = []
     
+    @Published var showingStats: Bool = false
+    
     public init(store: MainStore) {
         self.store = store
         store.objectWillChange
@@ -23,9 +25,13 @@ final class BetHistoryViewModel: ObservableObject {
     }
 }
 
-// MARK: - Behaviors
+// MARK: - Logic
 
 extension BetHistoryViewModel {
+    
+    func showStats() {
+        self.showingStats = true
+    }
     
     func delete(at offsets: IndexSet) {
         store.bets.remove(atOffsets: offsets)
