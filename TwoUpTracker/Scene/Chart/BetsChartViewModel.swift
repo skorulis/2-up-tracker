@@ -25,6 +25,32 @@ final class BetsChartViewModel: ObservableObject {
     
 }
 
+// MARK: - Compute values
+
+extension BetsChartViewModel {
+    var minDate: Date {
+        return chartPoints.first?.date ?? Date()
+    }
+    
+    var maxDate: Date {
+        return chartPoints.last?.date ?? Date()
+    }
+    
+    var lines: [Line] {
+        return [
+            Line(name: "Total", points: chartPoints),
+            Line(name: "LoseLine", points: [
+                .init(time: minDate.timeIntervalSince1970, total: -100),
+                .init(time: maxDate.timeIntervalSince1970, total: -100)
+            ]),
+            Line(name: "WinLine", points: [
+                .init(time: minDate.timeIntervalSince1970, total: 100),
+                .init(time: maxDate.timeIntervalSince1970, total: 100)
+            ])
+        ]
+    }
+}
+
 // MARK: - Logic
 
 extension BetsChartViewModel {
@@ -52,4 +78,17 @@ extension BetsChartViewModel {
         let maxTotal = chartPoints.map { $0.total }.max() ?? 0
         return max(maxTotal, 400)
     }
+}
+
+// MARK: - Inner types
+
+extension BetsChartViewModel {
+    
+    struct Line: Identifiable {
+        let name: String
+        let points: [RunningTotal]
+        
+        var id: String { name }
+    }
+    
 }

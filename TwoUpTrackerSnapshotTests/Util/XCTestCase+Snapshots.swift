@@ -27,7 +27,7 @@ public extension XCTestCase {
             )
         
         let hosting = UIHostingController(rootView: measuredView)
-        //hosting.view.frame = hosting.view.window!.screen.bounds
+        //hosting.view.frame = CGRect(origin: .zero, size: CGSize(width: 400, height: 800))
         
         SnapshotTesting.assertSnapshot(
             matching: hosting,

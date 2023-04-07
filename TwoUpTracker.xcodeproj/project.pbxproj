@@ -17,9 +17,7 @@
 		FA1CE50429DFA874002C3E41 /* ScaleOfPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4EA29DFA874002C3E41 /* ScaleOfPTView.swift */; };
 		FA1CE50529DFA874002C3E41 /* TwoUpTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4EC29DFA874002C3E41 /* TwoUpTrackerApp.swift */; };
 		FA1CE50629DFA874002C3E41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4ED29DFA874002C3E41 /* ContentView.swift */; };
-		FA1CE50729DFA874002C3E41 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4EF29DFA874002C3E41 /* LineChartView.swift */; };
 		FA1CE50829DFA874002C3E41 /* BetsChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4F029DFA874002C3E41 /* BetsChartViewModel.swift */; };
-		FA1CE50929DFA874002C3E41 /* ZeroLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4F129DFA874002C3E41 /* ZeroLineView.swift */; };
 		FA1CE50A29DFA874002C3E41 /* BetsChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4F229DFA874002C3E41 /* BetsChartView.swift */; };
 		FA1CE50B29DFA874002C3E41 /* BetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4F429DFA874002C3E41 /* BetEntry.swift */; };
 		FA1CE50C29DFA874002C3E41 /* PTImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4F529DFA874002C3E41 /* PTImage.swift */; };
@@ -27,13 +25,13 @@
 		FA1CE50E29DFA874002C3E41 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4F929DFA874002C3E41 /* ErrorService.swift */; };
 		FA1CE50F29DFA874002C3E41 /* IOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4FA29DFA874002C3E41 /* IOC.swift */; };
 		FA1CE51029DFA874002C3E41 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4FC29DFA874002C3E41 /* MainStore.swift */; };
-		FA1CE51329DFA887002C3E41 /* ASSwiftUI in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE51229DFA887002C3E41 /* ASSwiftUI */; };
 		FA1CE51629DFA8DD002C3E41 /* ASKCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA1CE51529DFA8DD002C3E41 /* ASKCore */; };
-		FA1CE51829DFA915002C3E41 /* ASSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FA1CE51729DFA915002C3E41 /* ASSwiftUI */; };
 		FA1CE52029DFA965002C3E41 /* TwoUpTrackerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE51F29DFA965002C3E41 /* TwoUpTrackerSnapshotTests.swift */; };
 		FA1CE52829DFA986002C3E41 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = FA1CE52729DFA986002C3E41 /* SnapshotTesting */; };
 		FA1CE52C29DFA9C6002C3E41 /* BetsChartViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE52B29DFA9C6002C3E41 /* BetsChartViewSnapshotTests.swift */; };
 		FA1CE52F29DFB214002C3E41 /* XCTestCase+Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE52E29DFB214002C3E41 /* XCTestCase+Snapshots.swift */; };
+		FA1CE53229DFC620002C3E41 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE53129DFC620002C3E41 /* SettingsView.swift */; };
+		FA1CE53429DFC62D002C3E41 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE53329DFC62D002C3E41 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +56,7 @@
 		FA1CE4EA29DFA874002C3E41 /* ScaleOfPTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleOfPTView.swift; sourceTree = "<group>"; };
 		FA1CE4EC29DFA874002C3E41 /* TwoUpTrackerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoUpTrackerApp.swift; sourceTree = "<group>"; };
 		FA1CE4ED29DFA874002C3E41 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FA1CE4EF29DFA874002C3E41 /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		FA1CE4F029DFA874002C3E41 /* BetsChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetsChartViewModel.swift; sourceTree = "<group>"; };
-		FA1CE4F129DFA874002C3E41 /* ZeroLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroLineView.swift; sourceTree = "<group>"; };
 		FA1CE4F229DFA874002C3E41 /* BetsChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetsChartView.swift; sourceTree = "<group>"; };
 		FA1CE4F429DFA874002C3E41 /* BetEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetEntry.swift; sourceTree = "<group>"; };
 		FA1CE4F529DFA874002C3E41 /* PTImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTImage.swift; sourceTree = "<group>"; };
@@ -68,11 +64,12 @@
 		FA1CE4F929DFA874002C3E41 /* ErrorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		FA1CE4FA29DFA874002C3E41 /* IOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOC.swift; sourceTree = "<group>"; };
 		FA1CE4FC29DFA874002C3E41 /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
-		FA1CE51229DFA887002C3E41 /* ASSwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ASSwiftUI; sourceTree = "<group>"; };
 		FA1CE51D29DFA965002C3E41 /* TwoUpTrackerSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoUpTrackerSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1CE51F29DFA965002C3E41 /* TwoUpTrackerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoUpTrackerSnapshotTests.swift; sourceTree = "<group>"; };
 		FA1CE52B29DFA9C6002C3E41 /* BetsChartViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsChartViewSnapshotTests.swift; sourceTree = "<group>"; };
 		FA1CE52E29DFB214002C3E41 /* XCTestCase+Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshots.swift"; sourceTree = "<group>"; };
+		FA1CE53129DFC620002C3E41 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FA1CE53329DFC62D002C3E41 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1CE51829DFA915002C3E41 /* ASSwiftUI in Frameworks */,
 				FA1CE51629DFA8DD002C3E41 /* ASKCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				FA1CE51E29DFA965002C3E41 /* TwoUpTrackerSnapshotTests */,
-				FA1CE51129DFA887002C3E41 /* Frameworks */,
 				FA1CE4CE29DFA779002C3E41 /* TwoUpTracker */,
 				FA1CE4CD29DFA779002C3E41 /* Products */,
 			);
@@ -147,6 +142,7 @@
 		FA1CE4E129DFA874002C3E41 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				FA1CE53029DFC61A002C3E41 /* Settings */,
 				FA1CE4E229DFA874002C3E41 /* UI */,
 				FA1CE4E429DFA874002C3E41 /* Bets */,
 				FA1CE4E929DFA874002C3E41 /* Scale */,
@@ -195,10 +191,8 @@
 		FA1CE4EE29DFA874002C3E41 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				FA1CE4EF29DFA874002C3E41 /* LineChartView.swift */,
-				FA1CE4F029DFA874002C3E41 /* BetsChartViewModel.swift */,
-				FA1CE4F129DFA874002C3E41 /* ZeroLineView.swift */,
 				FA1CE4F229DFA874002C3E41 /* BetsChartView.swift */,
+				FA1CE4F029DFA874002C3E41 /* BetsChartViewModel.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -238,14 +232,6 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
-		FA1CE51129DFA887002C3E41 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA1CE51229DFA887002C3E41 /* ASSwiftUI */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 		FA1CE51E29DFA965002C3E41 /* TwoUpTrackerSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +266,15 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		FA1CE53029DFC61A002C3E41 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CE53129DFC620002C3E41 /* SettingsView.swift */,
+				FA1CE53329DFC62D002C3E41 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,7 +293,6 @@
 			name = TwoUpTracker;
 			packageProductDependencies = (
 				FA1CE51529DFA8DD002C3E41 /* ASKCore */,
-				FA1CE51729DFA915002C3E41 /* ASSwiftUI */,
 			);
 			productName = TwoUpTracker;
 			productReference = FA1CE4CC29DFA779002C3E41 /* TwoUpTracker.app */;
@@ -372,7 +366,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1CE51329DFA887002C3E41 /* ASSwiftUI in Resources */,
 				FA1CE4FE29DFA874002C3E41 /* Preview Assets.xcassets in Resources */,
 				FA1CE4FD29DFA874002C3E41 /* Assets.xcassets in Resources */,
 			);
@@ -397,19 +390,19 @@
 				FA1CE50F29DFA874002C3E41 /* IOC.swift in Sources */,
 				FA1CE50829DFA874002C3E41 /* BetsChartViewModel.swift in Sources */,
 				FA1CE51029DFA874002C3E41 /* MainStore.swift in Sources */,
+				FA1CE53229DFC620002C3E41 /* SettingsView.swift in Sources */,
 				FA1CE50B29DFA874002C3E41 /* BetEntry.swift in Sources */,
 				FA1CE4FF29DFA874002C3E41 /* Color+Additions.swift in Sources */,
 				FA1CE50629DFA874002C3E41 /* ContentView.swift in Sources */,
 				FA1CE50029DFA874002C3E41 /* BetHistoryViewModel.swift in Sources */,
-				FA1CE50929DFA874002C3E41 /* ZeroLineView.swift in Sources */,
 				FA1CE50E29DFA874002C3E41 /* ErrorService.swift in Sources */,
 				FA1CE50229DFA874002C3E41 /* BetsView.swift in Sources */,
-				FA1CE50729DFA874002C3E41 /* LineChartView.swift in Sources */,
 				FA1CE50529DFA874002C3E41 /* TwoUpTrackerApp.swift in Sources */,
 				FA1CE50429DFA874002C3E41 /* ScaleOfPTView.swift in Sources */,
 				FA1CE50D29DFA874002C3E41 /* RunningTotal.swift in Sources */,
 				FA1CE50129DFA874002C3E41 /* BetHistoryView.swift in Sources */,
 				FA1CE50C29DFA874002C3E41 /* PTImage.swift in Sources */,
+				FA1CE53429DFC62D002C3E41 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,10 +695,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA1CE51429DFA8DD002C3E41 /* XCRemoteSwiftPackageReference "ASKCore" */;
 			productName = ASKCore;
-		};
-		FA1CE51729DFA915002C3E41 /* ASSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ASSwiftUI;
 		};
 		FA1CE52729DFA986002C3E41 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;

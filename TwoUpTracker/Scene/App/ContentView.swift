@@ -38,7 +38,7 @@ struct ContentView: View {
     }
     
     private var scale: some View {
-        ScaleOfPTView()
+        SettingsView(viewModel: factory.resolve())
             .tabItem {
                 Text("Settings")
                 Image(systemName: "gearshape.fill")

@@ -52,6 +52,7 @@ public final class IOC: IOCService {
         container.autoregister(BetsViewModel.self, initializer: BetsViewModel.init)
         container.autoregister(BetHistoryViewModel.self, initializer: BetHistoryViewModel.init)
         container.autoregister(BetsChartViewModel.self, initializer: BetsChartViewModel.init)
+        container.autoregister(SettingsViewModel.self, initializer: SettingsViewModel.init)
     }
     
     func resolve<ServiceType>(_ type: ServiceType.Type) -> ServiceType? {

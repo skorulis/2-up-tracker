@@ -1,8 +1,8 @@
 //  Created by Alexander Skorulis on 23/4/2022.
 
+import Charts
 import Foundation
 import SwiftUI
-import ASSwiftUI
 
 // MARK: - Memory footprint
 
@@ -17,28 +17,41 @@ struct BetsChartView {
 extension BetsChartView: View {
     
     var body: some View {
-        chart
+        if viewModel.chartPoints.count < 2 {
+            Text("Empty")
+        } else {
+            simpleChart
+        }
+    }
+    
+    var simpleChart: some View {
+        Chart {
+            ForEach(viewModel.chartPoints) { point in
+                LineMark(
+                    x: .value("Time", point.date),
+                    y: .value("$", point.total)
+                )
+            }
+        }
     }
     
     var chart: some View {
-        let xScale = ChartViewScale(min: viewModel.minX, max: viewModel.maxX)
-        let yScale = ChartViewScale(min: CGFloat(viewModel.minY), max: CGFloat(viewModel.maxY))
-        
-        let yAxis = AnyView(VerticalAxis(ticks: 5, formatValue: { (value) -> String in
-            let i = Int(value)
-            return "$\(i)"
-        }))
-        
-        return ChartView(
-            xScale: xScale,
-            yScale: yScale,
-            elements: [
-                AnyView(ZeroLineView()),
-                AnyView(LineChartView(points: viewModel.chartPoints)),
-                yAxis
-                ]
-        )
+        Chart {
+            ForEach(viewModel.lines) { line in
+                ForEach(line.points) { point in
+                    LineMark(
+                        x: .value("Time", point.date),
+                        y: .value("$", point.total))
+                }
+                .foregroundStyle(by: .value("name", line.name))
+            }
+        }
+        .chartXAxis {
+            AxisMarks(values: .stride(by: .hour))
+        }
+        .chartLegend(.hidden)
     }
+    
 }
 
 // MARK: - Previews
@@ -50,7 +63,23 @@ struct BetsChartView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        return previews(ioc: IOC())
+        previews(ioc: IOC())
+        filledPreview
+    }
+    
+    static var filledPreview: some View {
+        let ioc = IOC()
+        let store = ioc.resolve(MainStore.self)!
+        store.bets = [
+            BetEntry(time: 1, amount: 50),
+            BetEntry(time: 1000, amount: 20),
+            BetEntry(time: 2000, amount: 50),
+            BetEntry(time: 4000, amount: -50),
+            BetEntry(time: 6000, amount: -40),
+            BetEntry(time: 7000, amount: -40),
+            BetEntry(time: 8000, amount: 20),
+        ]
+        return BetsChartView(viewModel: ioc.factory.resolve())
     }
 }
 

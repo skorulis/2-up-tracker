@@ -11,7 +11,7 @@ import ASKCore
 @main
 struct PTGamblingTrackerApp: App {
     
-    let ioc: IOC = IOC()
+    let ioc: IOC = IOC(purpose: .normal)
     
     var body: some Scene {
         WindowGroup {

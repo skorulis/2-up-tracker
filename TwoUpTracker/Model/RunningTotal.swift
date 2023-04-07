@@ -13,6 +13,9 @@ struct RunningTotal: Identifiable {
     let total: Int
     
     var id: TimeInterval { time }
+    var date: Date {
+        return Date(timeIntervalSince1970: time)
+    }
 }
 
 extension RunningTotal {
