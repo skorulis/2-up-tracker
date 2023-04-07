@@ -14,20 +14,20 @@ public extension XCTestCase {
         line: UInt = #line
     ) {
         
-        var measuredSize: CGSize?
+        //var measuredSize: CGSize?
         
         let measuredView = view
             .background(
                 GeometryReader { proxy in
                     Color.clear
                         .onAppear {
-                            measuredSize = proxy.size
+                            //measuredSize = proxy.size
                         }
                 }
             )
         
         let hosting = UIHostingController(rootView: measuredView)
-        hosting.view.frame = hosting.view.window!.screen.bounds
+        //hosting.view.frame = hosting.view.window!.screen.bounds
         
         SnapshotTesting.assertSnapshot(
             matching: hosting,
