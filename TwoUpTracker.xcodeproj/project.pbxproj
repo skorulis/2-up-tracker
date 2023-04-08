@@ -39,9 +39,10 @@
 		FA1CE54029DFD804002C3E41 /* BetStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE53F29DFD804002C3E41 /* BetStatsViewModel.swift */; };
 		FA1CE54429DFF2D1002C3E41 /* PTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE54329DFF2D1002C3E41 /* PTImageView.swift */; };
 		FA1CE54629DFFE8D002C3E41 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE54529DFFE8D002C3E41 /* ImageType.swift */; };
-		FA1CE54829E001AC002C3E41 /* EmojiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE54729E001AC002C3E41 /* EmojiImage.swift */; };
+		FA1CE54829E001AC002C3E41 /* EmojiImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE54729E001AC002C3E41 /* EmojiImageProvider.swift */; };
 		FA1CE55229E0D87F002C3E41 /* TwoUpTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE55129E0D87F002C3E41 /* TwoUpTrackerTests.swift */; };
 		FA1CE55B29E0D8A8002C3E41 /* BetHistoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE55A29E0D8A8002C3E41 /* BetHistoryViewModelTests.swift */; };
+		FA1CE55F29E11A75002C3E41 /* JimVarneyImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE55E29E11A75002C3E41 /* JimVarneyImageProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,10 +94,11 @@
 		FA1CE53F29DFD804002C3E41 /* BetStatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetStatsViewModel.swift; sourceTree = "<group>"; };
 		FA1CE54329DFF2D1002C3E41 /* PTImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTImageView.swift; sourceTree = "<group>"; };
 		FA1CE54529DFFE8D002C3E41 /* ImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
-		FA1CE54729E001AC002C3E41 /* EmojiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiImage.swift; sourceTree = "<group>"; };
+		FA1CE54729E001AC002C3E41 /* EmojiImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiImageProvider.swift; sourceTree = "<group>"; };
 		FA1CE54F29E0D87F002C3E41 /* TwoUpTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoUpTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1CE55129E0D87F002C3E41 /* TwoUpTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoUpTrackerTests.swift; sourceTree = "<group>"; };
 		FA1CE55A29E0D8A8002C3E41 /* BetHistoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetHistoryViewModelTests.swift; sourceTree = "<group>"; };
+		FA1CE55E29E11A75002C3E41 /* JimVarneyImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JimVarneyImageProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +247,8 @@
 				FA1CE4F629DFA874002C3E41 /* RunningTotal.swift */,
 				FA1CE53A29DFD328002C3E41 /* PreviewData.swift */,
 				FA1CE54529DFFE8D002C3E41 /* ImageType.swift */,
-				FA1CE54729E001AC002C3E41 /* EmojiImage.swift */,
+				FA1CE54729E001AC002C3E41 /* EmojiImageProvider.swift */,
+				FA1CE55E29E11A75002C3E41 /* JimVarneyImageProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -504,7 +507,7 @@
 			files = (
 				FA1CE50329DFA874002C3E41 /* BetsViewModel.swift in Sources */,
 				FA1CE50A29DFA874002C3E41 /* BetsChartView.swift in Sources */,
-				FA1CE54829E001AC002C3E41 /* EmojiImage.swift in Sources */,
+				FA1CE54829E001AC002C3E41 /* EmojiImageProvider.swift in Sources */,
 				FA1CE53E29DFD7FA002C3E41 /* BetStatsView.swift in Sources */,
 				FA1CE53B29DFD328002C3E41 /* PreviewData.swift in Sources */,
 				FA1CE50F29DFA874002C3E41 /* IOC.swift in Sources */,
@@ -523,6 +526,7 @@
 				FA1CE50429DFA874002C3E41 /* ScaleOfPTView.swift in Sources */,
 				FA1CE50D29DFA874002C3E41 /* RunningTotal.swift in Sources */,
 				FA1CE50129DFA874002C3E41 /* BetHistoryView.swift in Sources */,
+				FA1CE55F29E11A75002C3E41 /* JimVarneyImageProvider.swift in Sources */,
 				FA1CE50C29DFA874002C3E41 /* PTImage.swift in Sources */,
 				FA1CE54029DFD804002C3E41 /* BetStatsViewModel.swift in Sources */,
 				FA1CE53429DFC62D002C3E41 /* SettingsViewModel.swift in Sources */,

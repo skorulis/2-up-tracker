@@ -30,6 +30,12 @@ extension PTImageView: View {
             Text(emoji)
                 .font(.system(size: 100))
                 .frame(height: 200)
+        } else if let image = obj as? Image {
+            image
+                .resizable()
+                .scaledToFit()
+                .frame(height: 200)
+                .background(Color.red)
         } else {
             fatalError()
         }
@@ -56,20 +62,15 @@ struct PTImageView_Previews: PreviewProvider {
     
     static var previews: some View {
         HStack {
-            VStack {
-                PTImageView(total: 0, limit: 0, provider: PTImageProvider())
-                PTImageView(total: 200, limit: 450, provider: PTImageProvider())
-                PTImageView(total: -200, limit: 450, provider: PTImageProvider())
+            ForEach(ImageType.allCases) { type in
+                VStack {
+                    PTImageView(total: 0, limit: 0, provider: type.provider)
+                    PTImageView(total: 200, limit: 450, provider: type.provider)
+                    PTImageView(total: -200, limit: 450, provider: type.provider)
+                }
             }
             
-            VStack {
-                PTImageView(total: 0, limit: 0, provider: EmojiImageProvider())
-                PTImageView(total: 200, limit: 450, provider: EmojiImageProvider())
-                PTImageView(total: -200, limit: 450, provider: EmojiImageProvider())
-            }
         }
-        
-        
     }
 }
 

@@ -4,6 +4,7 @@ import Foundation
 
 enum ImageType: String, Codable, CaseIterable, Identifiable {
     case emoji
+    case jvImage
     case ptImage
     
     var id: String { rawValue }
@@ -14,6 +15,8 @@ enum ImageType: String, Codable, CaseIterable, Identifiable {
             return PTImageProvider()
         case .emoji:
             return EmojiImageProvider()
+        case .jvImage:
+            return JimVarneyImageProvider()
         }
     }
     
@@ -23,6 +26,8 @@ enum ImageType: String, Codable, CaseIterable, Identifiable {
             return "Faces of PT"
         case .emoji:
             return "Emoji"
+        case .jvImage:
+            return "Jim Varney"
         }
     }
     
