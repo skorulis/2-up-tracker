@@ -6,6 +6,8 @@ final class SettingsViewModel: ObservableObject {
     
     private let store: MainStore
     
+    @Published var showingClearAlert: Bool = false
+    
     @Published var limit: String = "" {
         didSet {
             if let value = Int(limit) {
@@ -31,4 +33,12 @@ final class SettingsViewModel: ObservableObject {
         
     }
     
+}
+
+// MARK: - Logic
+
+extension SettingsViewModel {
+    func clearBets() {
+        self.store.bets = []
+    }
 }

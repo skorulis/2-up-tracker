@@ -29,11 +29,17 @@ final class BetHistoryViewModel: ObservableObject {
 
 extension BetHistoryViewModel {
     
+    var bets: [BetEntry] {
+        store.bets.reversed()
+    }
+    
     func showStats() {
         self.showingStats = true
     }
     
     func delete(at offsets: IndexSet) {
-        store.bets.remove(atOffsets: offsets)
+        var array = bets
+        array.remove(atOffsets: offsets)
+        store.bets = array.reversed()
     }
 }

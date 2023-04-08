@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BetEntry: Codable {
+struct BetEntry: Codable, Equatable {
     
     let time: TimeInterval
     let amount: Int

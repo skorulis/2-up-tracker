@@ -17,6 +17,10 @@ extension SettingsView: View {
     
     var body: some View {
         PageTemplate(nav: nav, content: content)
+            .alert("Are you sure?", isPresented: $viewModel.showingClearAlert) {
+                Button("Yes", role: .destructive, action: viewModel.clearBets)
+                Button("No", role: .cancel) {}
+            }
     }
     
     private func content() -> some View {
@@ -36,6 +40,12 @@ extension SettingsView: View {
                         .tag(type)
                 }
             }
+            
+            Button(action: { viewModel.showingClearAlert = true }) {
+                Text("Clear all bets")
+            }
+            .buttonStyle(ASKButtonStyle(flavor: .error))
+            .padding(.top, 40)
         }
         .padding(.horizontal, 16)
     }

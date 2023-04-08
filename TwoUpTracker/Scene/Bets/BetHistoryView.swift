@@ -24,7 +24,7 @@ extension BetHistoryView: View {
     }
     
     private func content() -> some View {
-        ForEach(viewModel.store.bets.reversed(), id: \.self) { bet in
+        ForEach(viewModel.bets, id: \.self) { bet in
             HStack {
                 Text(bet.timeString)
                 Spacer()
