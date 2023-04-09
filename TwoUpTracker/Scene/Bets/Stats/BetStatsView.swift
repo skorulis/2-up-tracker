@@ -1,5 +1,6 @@
 //Created by Alexander Skorulis on 7/4/2023.
 
+import ASKDesignSystem
 import Foundation
 import SwiftUI
 
@@ -14,6 +15,15 @@ struct BetStatsView {
 extension BetStatsView: View {
     
     var body: some View {
+        PageTemplate(nav: nav, content: content)
+    }
+    
+    private func nav() -> some View {
+        NavBar(mid: NavBarItem.title("Statistics"))
+    }
+    
+    @ViewBuilder
+    private func content() -> some View {
         if viewModel.total > 0 {
             filled
         } else {
@@ -23,11 +33,23 @@ extension BetStatsView: View {
     
     private var filled: some View {
         VStack {
-            Text("Bets: \(viewModel.total)")
-            Text("Wagered $\(viewModel.wagered)")
-            Text("Wins: \(viewModel.wins)")
-            Text("Losses: \(viewModel.losses)")
-            Text("Pct: \(viewModel.winPct)")
+            row("Wagered", viewModel.wageredString)
+            row("Bets", "\(viewModel.total)")
+            row("Wins", "\(viewModel.wins)")
+            row("Losses", "\(viewModel.losses)")
+            row("Win Percentage", viewModel.winPctString)
+            row("Play time", viewModel.playTimeString)
+        }
+        .padding(.horizontal, 32)
+    }
+    
+    private func row(_ title: String, _ value: String) -> some View {
+        HStack {
+            Text(title)
+                .typography(.title)
+            Spacer()
+            Text(value)
+                .typography(.subtitle)
         }
     }
 }
