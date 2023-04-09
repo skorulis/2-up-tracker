@@ -30,6 +30,16 @@ extension SettingsView: View {
             TextField("Limit", text: $viewModel.limit)
                 .keyboardType(.numberPad)
                 .textFieldStyle(.roundedBorder)
+                .toolbar {
+                    ToolbarItem(placement: .keyboard) {
+                        Button("Done") {
+                            UIApplication.shared.endEditing()
+                        }
+                    }
+                    ToolbarItem(placement: .keyboard) {
+                        Spacer()
+                    }
+                }
             
             Text("Image type")
                 .typography(.subtitle)
@@ -54,6 +64,13 @@ extension SettingsView: View {
         NavBar(mid: NavBarItem.title("Settings"))
     }
 }
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
 
 // MARK: - Previews
 
