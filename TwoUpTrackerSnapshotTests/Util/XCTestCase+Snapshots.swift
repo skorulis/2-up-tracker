@@ -13,21 +13,11 @@ public extension XCTestCase {
         testName: String = #function,
         line: UInt = #line
     ) {
+        let device = SnapshotDevice.current
         
-        //var measuredSize: CGSize?
-        
-        let measuredView = view
-            .background(
-                GeometryReader { proxy in
-                    Color.clear
-                        .onAppear {
-                            //measuredSize = proxy.size
-                        }
-                }
-            )
-        
-        let hosting = UIHostingController(rootView: measuredView)
-        //hosting.view.frame = CGRect(origin: .zero, size: CGSize(width: 400, height: 800))
+        let hosting = UIHostingController(rootView: view)
+        hosting.view.frame = CGRect(origin: .zero, size: device.screenSize)
+        measure(viewController: hosting, device: device)
         
         SnapshotTesting.assertSnapshot(
             matching: hosting,
@@ -39,10 +29,31 @@ public extension XCTestCase {
         
     }
     
-    func measure(viewController: UIViewController) {
+    private func measure(viewController: UIViewController, device: SnapshotDevice) {
+        let bounds = CGRect(origin: .zero, size: device.screenSize)
         let rootViewController = UIViewController()
+        rootViewController.view.bounds = bounds
         rootViewController.view.backgroundColor = .clear
+        rootViewController.preferredContentSize = bounds.size
+        rootViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        viewController.view.translatesAutoresizingMaskIntoConstraints = false
+        viewController.view.frame = bounds
+        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        rootViewController.view.addSubview(viewController.view)
+        NSLayoutConstraint.activate([
+            viewController.view.topAnchor.constraint(equalTo: rootViewController.view.topAnchor),
+            viewController.view.bottomAnchor.constraint(equalTo: rootViewController.view.bottomAnchor),
+            viewController.view.leftAnchor.constraint(equalTo: rootViewController.view.leftAnchor),
+            viewController.view.rightAnchor.constraint(equalTo: rootViewController.view.rightAnchor)
+        ])
         
+        rootViewController.addChild(viewController)
+        
+        let window = UIWindow(frame: bounds)
+        window.isHidden = true
+        window.rootViewController = rootViewController
+        rootViewController.view.setNeedsLayout()
+        rootViewController.view.layoutIfNeeded()
     }
     
 }

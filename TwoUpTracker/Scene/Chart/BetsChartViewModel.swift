@@ -19,8 +19,6 @@ final class BetsChartViewModel: ObservableObject {
         store.$bets
             .map { RunningTotal.generate(bets: $0)}
             .assign(to: &$chartPoints)
-            
-        
     }
     
 }

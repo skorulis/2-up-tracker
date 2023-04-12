@@ -15,7 +15,8 @@ final class BetsChartViewSnapshotTests: XCTestCase {
     }
     
     func test_filled() {
-        assertSnapshot(view: BetsChartView_Previews.filledPreview)
+        let view = BetsChartView_Previews.filledPreview
+        assertSnapshot(view: view)
     }
     
 }

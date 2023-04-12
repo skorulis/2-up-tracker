@@ -21,8 +21,12 @@ struct RunningTotal: Identifiable {
 extension RunningTotal {
     
     static func generate(bets: [BetEntry]) -> [RunningTotal] {
+        guard let firstBet = bets.first else {
+            return []
+        }
         var total: Int = 0
         var result: [RunningTotal] = []
+        result.append(.init(time: firstBet.time - 60, total: 0))
         for bet in bets {
             total += bet.amount
             result.append(.init(time: bet.time, total: total))

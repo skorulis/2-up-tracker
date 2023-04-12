@@ -20,7 +20,7 @@ extension BetsChartView: View {
         if viewModel.chartPoints.count < 2 {
             Text("Empty")
         } else {
-            simpleChart
+            chart
         }
     }
     
