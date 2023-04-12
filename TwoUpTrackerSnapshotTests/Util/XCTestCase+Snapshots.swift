@@ -17,7 +17,7 @@ public extension XCTestCase {
         
         let hosting = UIHostingController(rootView: view)
         hosting.view.frame = CGRect(origin: .zero, size: device.screenSize)
-        measure(viewController: hosting, device: device)
+        //measure(viewController: hosting, device: device)
         
         SnapshotTesting.assertSnapshot(
             matching: hosting,

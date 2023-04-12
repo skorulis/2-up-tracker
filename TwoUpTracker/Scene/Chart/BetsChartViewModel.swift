@@ -19,6 +19,12 @@ final class BetsChartViewModel: ObservableObject {
         store.$bets
             .map { RunningTotal.generate(bets: $0)}
             .assign(to: &$chartPoints)
+        
+        store.$limit
+            .sink { _ in
+                self.objectWillChange.send()
+            }
+            .store(in: &subscribers)
     }
     
 }

@@ -25,6 +25,21 @@ extension SettingsView: View {
     
     private func content() -> some View {
         VStack(alignment: .leading) {
+            betLimit
+            
+            imagePicker
+            
+            Button(action: { viewModel.showingClearAlert = true }) {
+                Text("Clear all bets")
+            }
+            .buttonStyle(ASKButtonStyle(flavor: .error))
+            .padding(.top, 60)
+        }
+        .padding(.horizontal, 16)
+    }
+    
+    private var betLimit: some View {
+        HStack {
             Text("Betting Limit")
                 .typography(.subtitle)
             TextField("Limit", text: $viewModel.limit)
@@ -40,24 +55,29 @@ extension SettingsView: View {
                         Spacer()
                     }
                 }
-            
-            Text("Image type")
-                .typography(.subtitle)
-            
-            Picker("Image Type", selection: $viewModel.imageType) {
-                ForEach(ImageType.allCases) { type in
-                    Text(type.name)
-                        .tag(type)
+        }
+    }
+    
+    private var imagePicker: some View {
+        VStack {
+            HStack {
+                Text("Emotion images")
+                    .typography(.subtitle)
+                Spacer()
+                Picker("Image Type", selection: $viewModel.imageType) {
+                    ForEach(ImageType.allCases) { type in
+                        Text(type.name)
+                            .tag(type)
+                    }
                 }
             }
-            
-            Button(action: { viewModel.showingClearAlert = true }) {
-                Text("Clear all bets")
-            }
-            .buttonStyle(ASKButtonStyle(flavor: .error))
-            .padding(.top, 40)
+            PTImageView(
+                total: 0,
+                limit: 0,
+                provider: viewModel.store.imageType.provider
+            )
         }
-        .padding(.horizontal, 16)
+        
     }
     
     private func nav() -> some View {

@@ -4,7 +4,7 @@ import Foundation
 
 final class SettingsViewModel: ObservableObject {
     
-    private let store: MainStore
+    let store: MainStore
     
     @Published var showingClearAlert: Bool = false
     

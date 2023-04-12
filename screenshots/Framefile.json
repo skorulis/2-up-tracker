@@ -1,0 +1,24 @@
+{
+  "default": {
+    "keyword": {
+      "color": "#000000"
+    },
+    "title": {
+      "color": "#000000"
+    },
+    "background": "./background.jpg",
+    "padding": 50,
+    "show_complete_frame": false,
+    "stack_title": false,
+    "title_below_image": true
+  },
+  "data": [
+    {
+      "filter": "Bets",
+      "title": {
+        "text": "Track each bet",
+        "font_size": 100
+      }
+    }
+  ]
+}

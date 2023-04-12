@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0D2FB829E69F9400C8F052 /* BetsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D2FB729E69F9400C8F052 /* BetsViewSnapshotTests.swift */; };
 		FA1CE4FD29DFA874002C3E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE4DE29DFA874002C3E41 /* Assets.xcassets */; };
 		FA1CE4FE29DFA874002C3E41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE4E029DFA874002C3E41 /* Preview Assets.xcassets */; };
 		FA1CE4FF29DFA874002C3E41 /* Color+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE4E329DFA874002C3E41 /* Color+Additions.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0D2FB729E69F9400C8F052 /* BetsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsViewSnapshotTests.swift; sourceTree = "<group>"; };
 		FA1CE4CC29DFA779002C3E41 /* TwoUpTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoUpTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1CE4DE29DFA874002C3E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1CE4E029DFA874002C3E41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 		FA1CE56029E26F57002C3E41 /* Bets */ = {
 			isa = PBXGroup;
 			children = (
+				FA0D2FB729E69F9400C8F052 /* BetsViewSnapshotTests.swift */,
 			);
 			path = Bets;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0D2FB829E69F9400C8F052 /* BetsViewSnapshotTests.swift in Sources */,
 				FA1CE52F29DFB214002C3E41 /* XCTestCase+Snapshots.swift in Sources */,
 				FA1CE52C29DFA9C6002C3E41 /* BetsChartViewSnapshotTests.swift in Sources */,
 				FA1CE52029DFA965002C3E41 /* TwoUpTrackerSnapshotTests.swift in Sources */,
