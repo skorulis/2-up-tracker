@@ -13,12 +13,14 @@ enum PTImage: String, CaseIterable {
     
     case angry1, angry2
     
-    case happy1, happy2, happy3, happy4, happy5, happy6, happy7, happy8
+    case happy1, happy2, happy3, happy4, happy5, happy6, happy7, happy8, happy9, happy10
     case odd2, odd3
     case ok1, ok2
-    case plain1, plain2, plain3, plain5, plain6, plain7
-    case shocked1, shocked2, shocked3, shocked4
-    case stoned1, stoned2
+    case pain1
+    case plain1, plain2, plain3, plain5, plain6, plain7, plain8, plain9
+    case pray1
+    case shocked1, shocked2, shocked3, shocked4, shocked5
+    case stoned1, stoned2, stoned3
     case unsure1, unsure2, unsure3, unsure4, unsure5, unsure6, unsure7, unsure8, unsure9
     case what1, what2, what3
     case winning1, winning2, winning3, winning4, winning5
@@ -43,22 +45,30 @@ extension PTImage {
         case .happy6: return 40
         case .happy7: return 52
         case .happy8: return 53
+        case .happy9: return 54
+        case .happy10: return 55
         case .odd2: return -80
         case .odd3: return -50
         case .ok1: return 20
         case .ok2: return 30
+        case .pain1: return -30
         case .plain1: return 10
         case .plain2: return 10
         case .plain3: return 10
         case .plain5: return 20
         case .plain6: return 20
         case .plain7: return 20
+        case .plain8: return 15
+        case .plain9: return 22
+        case .pray1: return -5
         case .shocked1: return -50
         case .shocked2: return -50
         case .shocked3: return -50
         case .shocked4: return -55
+        case .shocked5: return -40
         case .stoned1: return -80
         case .stoned2: return -80
+        case .stoned3: return -50
         case .unsure1: return -20
         case .unsure2: return -21
         case .unsure3: return -22

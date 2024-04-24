@@ -20,17 +20,10 @@ extension BetsChartView: View {
         if viewModel.chartPoints.count < 2 {
             Text("Empty")
         } else {
-            chart
-        }
-    }
-    
-    var simpleChart: some View {
-        Chart {
-            ForEach(viewModel.chartPoints) { point in
-                LineMark(
-                    x: .value("Time", point.date),
-                    y: .value("$", point.total)
-                )
+            VStack {
+                chart
+                Spacer()
+                    .frame(height: 44)
             }
         }
     }
