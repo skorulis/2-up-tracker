@@ -9,6 +9,7 @@ import SwiftUI
 struct SettingsView {
     
     @StateObject var viewModel: SettingsViewModel
+    @State private var sliderPos: Float = 0.5
 }
 
 // MARK: - Rendering
@@ -72,12 +73,17 @@ extension SettingsView: View {
                 }
             }
             PTImageView(
-                total: 0,
-                limit: 0,
+                total: sliderValue,
+                limit: 1000,
                 provider: viewModel.store.imageType.provider
             )
+            
+            Slider(value: $sliderPos)
         }
-        
+    }
+    
+    private var sliderValue: Int {
+        return Int((sliderPos - 0.5) * 2000)
     }
     
     private func nav() -> some View {
